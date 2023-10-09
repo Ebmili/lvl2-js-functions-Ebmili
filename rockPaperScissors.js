@@ -1,3 +1,5 @@
+const ROCK = 'rock';
+
 function determineWinner(player1Choice, player2Choice) {
 const validChoices = ['rock', 'paper', 'scissors'];
 
@@ -8,8 +10,8 @@ const validChoices = ['rock', 'paper', 'scissors'];
   if (player1Choice === player2Choice) {
       return "It's a draw!";
   } else if (
-      (player1Choice === 'rock' && player2Choice === 'scissors') ||
-      (player1Choice === 'paper' && player2Choice === 'rock') ||
+    (player1Choice === ROCK && player2Choice === 'scissors') ||
+    (player1Choice === 'paper' && player2Choice === ROCK) ||
       (player1Choice === 'scissors' && player2Choice === 'paper')
   ) {
       return `First player wins!.`;

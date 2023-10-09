@@ -1,6 +1,6 @@
-function abbrev(str) {
-  const abbreviation = str.slice(0, 3);
-  return abbreviation + " " + str.length;
+function abbrev(input) {
+  const abbreviation = input.slice(0, 3);
+  return abbreviation + " " + input.length;
 }
 
 const userInput = "I am your father";
