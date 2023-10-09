@@ -1,6 +1,6 @@
 const ROCK = 'rock';
 
-function determineWinner(player1Choice, player2Choice) {
+function rockPaperScissors(player1Choice, player2Choice) {
 const validChoices = ['rock', 'paper', 'scissors'];
 
   if (!validChoices.includes(player1Choice) || !validChoices.includes(player2Choice)) {
@@ -20,5 +20,5 @@ const validChoices = ['rock', 'paper', 'scissors'];
   } 
 }
 
-const result = determineWinner('blabla', 'paper'); 
+const result = rockPaperScissors('blabla', 'paper'); 
 console.log(result);
